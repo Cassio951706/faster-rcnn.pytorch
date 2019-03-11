@@ -61,9 +61,11 @@ def parse_args():
                       nargs=argparse.REMAINDER)
   parser.add_argument('--load_dir', dest='load_dir',
                       help='directory to load models',
-                      default="/srv/share/jyang375/models")
+                      # default="/srv/share/jyang375/models")
+                      default="/home/xy/workspace/faster-rcnn.pytorch/data/pretrained_model")
   parser.add_argument('--image_dir', dest='image_dir',
                       help='directory to load images for demo',
+                      # default="images")
                       default="images")
   parser.add_argument('--cuda', dest='cuda',
                       help='whether use CUDA',
